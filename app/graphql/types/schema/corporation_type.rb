@@ -11,6 +11,8 @@ module Types
       field :AddressId, Integer
       field :phone, String
       field :frozen, Boolean, null: false
+      field :brands, [Types::Schema::BrandType], 'Returns all brands'
+
       field :createdAt, GraphQL::Types::ISO8601DateTime, null: false
       field :updatedAt, GraphQL::Types::ISO8601DateTime, null: false
     end

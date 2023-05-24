@@ -12,6 +12,8 @@ module Types
       field :phone, String
       field :frozen, Boolean, null: false
       field :BrandId, Integer
+      field :brand, Types::Schema::BrandType
+
       field :createdAt, GraphQL::Types::ISO8601DateTime, null: false
       field :updatedAt, GraphQL::Types::ISO8601DateTime, null: false
     end

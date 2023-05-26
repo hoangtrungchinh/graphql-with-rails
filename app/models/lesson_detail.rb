@@ -1,5 +1,26 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: LessonDetails
+#
+#  id                         :integer          not null, primary key
+#  ZoomLessonId               :integer
+#  BookChapterId              :integer
+#  CourseId                   :integer
+#  mainTitle                  :string(255)      not null
+#  subTitle                   :string(255)      not null
+#  imageFileName              :string(255)
+#  pageNumber                 :string(255)
+#  description                :text
+#  isVisible                  :boolean
+#  offlineLessonStartDateTime :datetime
+#  offlineLessonEndDateTime   :datetime
+#  startDateTime              :datetime
+#  endDateTime                :datetime
+#  createdAt                  :datetime         not null
+#  updatedAt                  :datetime         not null
+#
 class LessonDetail < ActiveRecord::Base
   self.table_name = 'LessonDetails'
 

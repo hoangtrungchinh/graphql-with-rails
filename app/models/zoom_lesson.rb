@@ -1,5 +1,20 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: ZoomLessons
+#
+#  id                  :integer          not null, primary key
+#  zoomLink            :string(255)      not null
+#  zoomTitle           :string(255)      not null
+#  replayFileName      :string(255)
+#  startDateTime       :datetime         not null
+#  replayStartDateTime :datetime
+#  endDateTime         :datetime         not null
+#  replayEndDateTime   :datetime
+#  createdAt           :datetime         not null
+#  updatedAt           :datetime         not null
+#
 class ZoomLesson < ActiveRecord::Base
   self.table_name = 'ZoomLessons'
 

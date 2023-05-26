@@ -35,6 +35,15 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'faker'
+
+  # Annotate Rails classes with schema and routes info
+  gem 'annotate', '~> 3.1'
+
+  # Combine 'pry' with 'byebug'
+  # Adds 'step', 'next', 'finish', 'continue' and 'break' commands to control execution
+  gem 'pry-byebug', '~> 3.9'
+  # Use Pry as your rails console
+  gem 'pry-rails', '~> 0.3'
 end
 
 group :development do

@@ -1,5 +1,20 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: Viewers
+#
+#  id                 :integer          not null, primary key
+#  uid                :string(255)      not null
+#  SchoolId           :integer
+#  TeachingMaterialId :integer
+#  billingStatus      :enum             default("billable")
+#  password           :string(255)      not null
+#  deviceCode         :string(255)
+#  frozen             :boolean          default(FALSE), not null
+#  createdAt          :datetime         not null
+#  updatedAt          :datetime         not null
+#
 class Viewer < ActiveRecord::Base
   self.table_name = 'Viewers'
 

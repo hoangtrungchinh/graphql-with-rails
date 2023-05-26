@@ -1,5 +1,20 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: Corporations
+#
+#  id        :integer          not null, primary key
+#  uid       :string(255)      not null
+#  password  :string(255)
+#  name      :string(255)      not null
+#  nameKana  :string(255)      not null
+#  AddressId :integer
+#  phone     :string(255)
+#  frozen    :boolean          default(FALSE), not null
+#  createdAt :datetime         not null
+#  updatedAt :datetime         not null
+#
 class Corporation < ActiveRecord::Base
   self.table_name = 'Corporations'
 

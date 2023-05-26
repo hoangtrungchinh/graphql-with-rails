@@ -1,5 +1,23 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: TeachingMaterials
+#
+#  id                    :integer          not null, primary key
+#  name                  :string(255)      not null
+#  code                  :string(255)      not null
+#  position              :integer          not null
+#  additionalViewerPrice :integer
+#  defaultViewerPrice    :integer
+#  price                 :integer          default(0)
+#  comingSoon            :boolean          default(FALSE), not null
+#  automaticRenew        :boolean          default(FALSE), not null
+#  imageFileName         :string(255)
+#  description           :text
+#  createdAt             :datetime         not null
+#  updatedAt             :datetime         not null
+#
 class TeachingMaterial < ActiveRecord::Base
   self.table_name = 'TeachingMaterials'
 

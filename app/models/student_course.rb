@@ -1,5 +1,19 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: StudentCourses
+#
+#  id            :integer          not null, primary key
+#  StudentId     :integer
+#  CourseId      :integer
+#  billingStatus :enum             default("billable")
+#  state         :string(255)      not null
+#  startDate     :date
+#  stopDate      :date
+#  createdAt     :datetime         not null
+#  updatedAt     :datetime         not null
+#
 class StudentCourse < ActiveRecord::Base
   self.table_name = 'StudentCourses'
 

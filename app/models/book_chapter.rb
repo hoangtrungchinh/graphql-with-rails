@@ -1,5 +1,18 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: BookChapters
+#
+#  id          :integer          not null, primary key
+#  code        :integer          not null
+#  BookId      :integer
+#  name        :string(255)      not null
+#  description :text
+#  isVirtual   :boolean          default(FALSE), not null
+#  createdAt   :datetime         not null
+#  updatedAt   :datetime         not null
+#
 class BookChapter < ActiveRecord::Base
   self.table_name = 'BookChapters'
 

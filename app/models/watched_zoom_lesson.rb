@@ -1,5 +1,16 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: WatchedZoomLessons
+#
+#  id           :integer          not null, primary key
+#  StudentId    :integer
+#  ZoomLessonId :integer
+#  attended     :boolean
+#  createdAt    :datetime         not null
+#  updatedAt    :datetime         not null
+#
 class WatchedZoomLesson < ActiveRecord::Base
   self.table_name = 'WatchedZoomLessons'
 

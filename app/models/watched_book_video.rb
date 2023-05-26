@@ -1,5 +1,15 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: WatchedBookVideos
+#
+#  id          :integer          not null, primary key
+#  StudentId   :integer
+#  BookVideoId :integer
+#  createdAt   :datetime         not null
+#  updatedAt   :datetime         not null
+#
 class WatchedBookVideo < ActiveRecord::Base
   self.table_name = 'WatchedBookVideos'
 

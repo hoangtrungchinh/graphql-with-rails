@@ -1,5 +1,23 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: Courses
+#
+#  id                :integer          not null, primary key
+#  BookId            :integer
+#  nextCourseId      :integer
+#  name              :string(255)
+#  startDate         :date             not null
+#  endDate           :date             not null
+#  isHybrid          :boolean          not null
+#  showBookVideo     :boolean          not null
+#  showZoomLesson    :boolean          not null
+#  showHomeworkVideo :boolean          not null
+#  CorporationId     :integer
+#  createdAt         :datetime         not null
+#  updatedAt         :datetime         not null
+#
 class Course < ActiveRecord::Base
   self.table_name = 'Courses'
 

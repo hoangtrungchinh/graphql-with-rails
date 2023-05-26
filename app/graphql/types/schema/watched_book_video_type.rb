@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Types
-  module Types
+  module Schema
     class WatchedBookVideoType < Types::BaseObject
       field :id, ID, null: false
       field :StudentId, Integer

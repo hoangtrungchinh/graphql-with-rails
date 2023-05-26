@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
 module Types
-  module Types
+  module Schema
     class ViewerType < Types::BaseObject
       field :id, ID, null: false
       field :uid, String, null: false
       field :SchoolId, Integer
       field :TeachingMaterialId, Integer
-      field :billingStatus, Types::EnumType
+      field :billingStatus, String
       field :password, String, null: false
       field :deviceCode, String
       field :frozen, Boolean, null: false

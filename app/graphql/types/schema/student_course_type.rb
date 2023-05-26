@@ -6,7 +6,7 @@ module Types
       field :id, ID, null: false
       field :StudentId, Integer
       field :CourseId, Integer
-      field :billingStatus, Types::EnumType
+      field :billingStatus, String
       field :state, String, null: false
       field :startDate, GraphQL::Types::ISO8601Date
       field :stopDate, GraphQL::Types::ISO8601Date
